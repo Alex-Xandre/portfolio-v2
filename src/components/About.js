@@ -14,7 +14,7 @@ const About = () => {
             <h1><span>&#60;</span> About <span> &#62;</span></h1>
             <h2><span>Hello !</span>  I am full stack developer specializing in developing solutions with MERN Stack Applications</h2>
             <h2>A 22 year old programmer that worked on projects including creation of websites, android application, full-stack software development; moderating discord and editing short videos; and tutoring.<br/><br/>Things that I am currently studying: #Web Development, #UI/UX Design, #Trading, #Web3, #VA, #Japanese Culture</h2>
-            <h1><span>&#60;</span> About <span> &#47; &#62;</span></h1>
+            <h1><span>&#60; &#47;</span> About <span>  &#62;</span></h1>
         </div>
 
         <div data-aos ="fade-left" className='tech_container'> 

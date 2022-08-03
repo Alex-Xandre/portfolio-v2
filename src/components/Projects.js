@@ -28,7 +28,7 @@ const Projects = () => {
             )
         })}
 
-        <h1><span>&#60;</span> Projects <span> &#47; &#62;</span></h1>
+        <h1><span>&#60; &#47;</span> Projects <span>  &#62;</span></h1>
     </section>
   )
 }
