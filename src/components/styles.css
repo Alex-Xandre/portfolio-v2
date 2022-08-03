@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600&display=swap");
+/*color*/
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  max-width: 2000px;
+}
+
+h3 {
+  padding: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #20AFFF;
+}
+
+.container {
+  overflow: hidden;
+}
+
+/* navbar*/
+nav ul {
+  padding: 0;
+  width: 250px;
+}
+nav ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 20px;
+  cursor: pointer;
+}
+nav ul li span {
+  color: #20AFFF;
+  opacity: 0;
+}
+nav ul li:hover {
+  color: #20AFFF;
+}
+nav ul li:hover span {
+  opacity: 1;
+}
+nav li .activelink {
+  color: #20AFFF;
+}
+
+.inactive {
+  display: none;
+}
+
+ul.active {
+  display: initial;
+}
+
+/*header*/
+.header {
+  overflow: hidden;
+}
+.header .switch_container {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  color: #20AFFF;
+  padding-bottom: 10px;
+}
+.header .switch_container h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header .switch_container .socials_container {
+  display: flex;
+  margin-left: 20px;
+}
+.header .switch_container .socials_container a {
+  text-decoration: none;
+  color: #20AFFF;
+  margin-right: 10px;
+}
+.header .switch_container .socials_container a svg {
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+.header .switch_container .socials_container a:hover svg {
+  opacity: 1;
+}
+.header .switch_container .menu-icon {
+  position: absolute;
+  right: 2em;
+  align-self: center;
+  top: 30px;
+}
+.header .switch_container .menu-icon svg {
+  font-size: 1.2rem;
+}
+.header .hero_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header .hero_section img {
+  max-width: 350px;
+}
+.header .hero_section button {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  font-size: 1rem;
+  background-color: #20AFFF;
+  opacity: 0.8;
+  color: black;
+  border: none;
+  font-family: "Varela Round", sans-serif;
+  padding: 1em 2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-align: center;
+}
+.header .hero_section button:hover {
+  opacity: 1;
+}
+.header .hero_section h1 {
+  padding: 20px;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.about_section {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.about_section .description_container h1, .about_section .description_container h2, .about_section .description_container h3 {
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  padding-top: 20px;
+  line-height: 25px;
+}
+.about_section .description_container h1 span, .about_section .description_container h2 span, .about_section .description_container h3 span {
+  color: #20AFFF;
+}
+.about_section .description_container h1 {
+  font-size: 1.7rem;
+  padding: 30px;
+}
+.about_section .description_container h2 {
+  font-size: 1.2rem;
+}
+.about_section .description_container h3 {
+  font-size: 1rem;
+}
+.about_section .tech_container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.about_section .tech_container h1 {
+  width: 100%;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+  padding-top: 30px;
+}
+.about_section .tech_container h1 span {
+  color: #20AFFF;
+}
+.about_section .tech_container img {
+  margin: 10px;
+  width: 50px;
+}
+.about_section .tech_container img:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.project_section, .contact_section {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project_section h1, .project_section h2, .project_section h3, .contact_section h1, .contact_section h2, .contact_section h3 {
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  padding-top: 10px;
+  line-height: 25px;
+}
+.project_section h1 span, .project_section h1 a, .project_section h2 span, .project_section h2 a, .project_section h3 span, .project_section h3 a, .contact_section h1 span, .contact_section h1 a, .contact_section h2 span, .contact_section h2 a, .contact_section h3 span, .contact_section h3 a {
+  color: #20AFFF;
+}
+.project_section h1, .contact_section h1 {
+  font-size: 1.7rem;
+  width: 100%;
+  padding: 20px;
+}
+.project_section h2, .contact_section h2 {
+  font-size: 1.2rem;
+}
+.project_section h3, .contact_section h3 {
+  font-size: 1rem;
+}
+.project_section h4, .contact_section h4 {
+  padding: 20px;
+  font-weight: 400;
+}
+.project_section .project, .contact_section .project {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 20px 10px;
+  overflow: hidden;
+  max-width: 350px;
+  min-height: 300px;
+  background-image: linear-gradient(#f0f0f0, #20AFFF);
+}
+.project_section .project img, .contact_section .project img {
+  width: 100%;
+  overflow: hidden;
+  transform: scale(1);
+}
+.project_section .overlay, .contact_section .overlay {
+  position: absolute;
+  transition: 0.2s ease-in;
+  opacity: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0px 20px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(#f0f0f0, #20AFFF);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project_section .overlay h1, .contact_section .overlay h1 {
+  font-size: 1.2rem;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.project_section .overlay h2, .contact_section .overlay h2 {
+  font-size: 1rem;
+}
+.project_section .overlay h2 span, .contact_section .overlay h2 span {
+  color: #0029FF;
+}
+.project_section .overlay button, .contact_section .overlay button {
+  font-size: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #20233D;
+  opacity: 0.8;
+  margin-top: 20px;
+  border: none;
+  font-family: "Varela Round", sans-serif;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-align: center;
+}
+.project_section .overlay button a, .contact_section .overlay button a {
+  color: wheat;
+  text-decoration: none;
+}
+.project_section .overlay button:hover, .contact_section .overlay button:hover {
+  opacity: 1;
+}
+.project_section .project:hover .overlay, .contact_section .project:hover .overlay {
+  opacity: 1;
+}
+.project_section .overlayLeft, .contact_section .overlayLeft {
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: saturate(70%) blur(30px);
+          backdrop-filter: saturate(70%) blur(30px);
+  color: black;
+}
+.project_section .project:hover .overlayLeft, .contact_section .project:hover .overlayLeft {
+  width: 100%;
+}
+
+.services_section {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+.services_section .services_container {
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  min-width: 350px;
+  max-width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services_section .services_container h1 {
+  font-size: 1.2rem;
+  color: black;
+  opacity: 0.8;
+  padding: 10px;
+}
+.services_section .services_container h2 {
+  color: black;
+}
+.services_section h1, .services_section h2, .services_section h3 {
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  padding-top: 10px;
+  line-height: 25px;
+}
+.services_section h1 span, .services_section h1 a, .services_section h2 span, .services_section h2 a, .services_section h3 span, .services_section h3 a {
+  color: #20AFFF;
+}
+.services_section h1 {
+  font-size: 1.7rem;
+  width: 100%;
+  padding: 30px;
+  color: wheat;
+}
+.services_section h2 {
+  font-size: 1.2rem;
+}
+.services_section h3 {
+  font-size: 1rem;
+}
+
+.contact_section {
+  padding-bottom: 50px;
+  flex-direction: column;
+}
+
+@media (min-width: 990px) {
+  .container {
+    overflow: hidden;
+  }
+  .container .project_section {
+    z-index: 2;
+  }
+  nav {
+    position: fixed;
+    width: 250px;
+    background-color: black;
+  }
+  ul.active, ul.inactive {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: wheat;
+    z-index: 0;
+    height: 100vh;
+    position: absolute;
+  }
+  .header {
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin-left: 250px;
+  }
+  .header .switch_container .menu-icon {
+    display: none;
+  }
+  .header .hero_section button {
+    position: relative;
+    margin: 30px 20px 20px;
+  }
+  .about_section, .project_section, .services_section, .contact_section {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow-x: hidden !important;
+    position: relative;
+  }
+  .about_section {
+    flex-direction: row;
+    margin-left: 250px;
+  }
+  .project_section {
+    margin-left: 250px;
+  }
+  .project_section {
+    z-index: -1;
+  }
+  .contact_section {
+    background-color: white;
+    z-index: 2;
+  }
+}/*# sourceMappingURL=styles.css.map */
