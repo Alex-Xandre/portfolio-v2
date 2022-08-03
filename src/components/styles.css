@@ -386,7 +386,6 @@ ul.active {
     position: absolute;
   }
   .header {
-    min-height: 100vh;
     overflow-x: hidden;
     margin-left: 250px;
   }
