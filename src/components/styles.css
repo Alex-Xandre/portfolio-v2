@@ -358,6 +358,7 @@ ul.active {
 .contact_section {
   padding-bottom: 50px;
   flex-direction: column;
+  background-color: whitesmoke;
 }
 .contact_section h1, .contact_section h2, .contact_section h4 {
   color: black;
