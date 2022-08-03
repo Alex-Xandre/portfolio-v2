@@ -10,10 +10,10 @@ const Header = ({onSwitch, theme, clicked, onClick}) => {
 
   <header className='header'>
     <div className='switch_container' >
-      {theme === 'light' ? 
-        <h3 onClick={onSwitch()} >Morning mode <BsCloudSun/> </h3>
+      {theme === 'dark' ? 
+        <h3 onClick={onSwitch()} >Switch to Morning mode <BsCloudSun/> </h3>
         : 
-        <h3 onClick={onSwitch()} >Night mode <BsCloudMoon/></h3>}
+        <h3 onClick={onSwitch()} >Switch To Night mode <BsCloudMoon/></h3>}
         
         <div className='socials_container'>
           <a href="https://www.linkedin.com/in/alexander-micua-04657a217/" target="_blank" rel='noreferrer'><AiOutlineLinkedin/></a>

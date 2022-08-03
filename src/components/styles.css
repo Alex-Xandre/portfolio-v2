@@ -359,6 +359,9 @@ ul.active {
   padding-bottom: 50px;
   flex-direction: column;
 }
+.contact_section h1, .contact_section h2, .contact_section h4 {
+  color: black;
+}
 
 @media (min-width: 990px) {
   .container {

@@ -32,12 +32,12 @@ export const Project =[
         'url':'https://elms-bnhs.herokuapp.com/'
     },
     {
-        'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337903/avatar/barkmeoww_geoohk.png',
+        'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659507130/avatar/port_jed2rc.png',
         'title':'This Website',
         'description':'My portfolio',
         'tech':'React',
         'btn_txt':'View Repo',
-        'url':'#'
+        'url':'https://github.com/Alex-Xandre/portfolio-v2'
     }
 
 ]
