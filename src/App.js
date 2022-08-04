@@ -15,7 +15,7 @@ const StyledApp = styled.div `
 color: ${(props) => props.theme.fontColor}` 
 
 function App() {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("dark")
   const [clicked,setClicked] = useState(true)
   const themeToggler =() =>{
     theme === "light" ? setTheme("dark"): setTheme("light")
