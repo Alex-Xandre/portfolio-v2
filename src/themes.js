@@ -6,7 +6,7 @@ export const lightTheme ={
 }
 export const darkTheme ={
     body: 'black',
-    fontColor:'wheat',
+    fontColor:'#f3f7fa',
 }
 
 export const lighterTheme ={
@@ -16,7 +16,7 @@ export const lighterTheme ={
 
 export const darkerTheme ={
     body: '#1f202e',
-    fontColor:'wheat',
+    fontColor:'#f3f7fa',
 }
 
 export const GlobalStyles = createGlobalStyle`

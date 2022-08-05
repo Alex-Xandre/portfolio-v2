@@ -12,6 +12,7 @@ h3 {
   font-weight: 400;
   cursor: pointer;
   color: #20AFFF;
+  z-index: 100;
 }
 
 .container {
@@ -277,7 +278,7 @@ ul.active {
   text-align: center;
 }
 .project_section .overlay button a, .contact_section .overlay button a {
-  color: wheat;
+  color: #f3f7fa;
   text-decoration: none;
 }
 .project_section .overlay button:hover, .contact_section .overlay button:hover {
@@ -305,15 +306,13 @@ ul.active {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  position: absolute;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+  z-index: -1;
   background-color: black;
+  position: static;
 }
 .services_section .services_container {
   padding: 20px;
-  margin: 10px;
+  margin: 10px 20px;
   background-color: white;
   min-width: 350px;
   max-width: 350px;
@@ -322,6 +321,7 @@ ul.active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 20;
 }
 .services_section .services_container h1 {
   font-size: 1.2rem;
@@ -346,7 +346,7 @@ ul.active {
   font-size: 1.7rem;
   width: 100%;
   padding: 30px;
-  color: wheat;
+  color: #f3f7fa;
 }
 .services_section h2 {
   font-size: 1.2rem;
@@ -380,14 +380,15 @@ ul.active {
     display: flex;
     flex-direction: column;
     background-color: black;
-    color: wheat;
-    z-index: 0;
+    color: #f3f7fa;
+    z-index: -1;
     height: 100vh;
     position: absolute;
   }
   .header {
     overflow-x: hidden;
     margin-left: 250px;
+    padding-bottom: 100px;
   }
   .header .switch_container .menu-icon {
     display: none;
@@ -397,12 +398,15 @@ ul.active {
     margin: 30px 20px 20px;
   }
   .about_section, .project_section, .services_section, .contact_section {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 100px;
     padding-bottom: 100px;
     overflow-x: hidden !important;
     position: relative;
+  }
+  .services_section {
+    z-index: 0;
   }
   .about_section {
     flex-direction: row;
@@ -412,6 +416,11 @@ ul.active {
     margin-left: 250px;
   }
   .project_section {
+    z-index: -1;
+  }
+  .services_section {
+    background-color: transparent;
+    background-color: black;
     z-index: -1;
   }
   .contact_section {

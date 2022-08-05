@@ -33,13 +33,14 @@ h3{
     font-weight: 400;
     cursor: pointer;
    color: $light-blue;
+   z-index: 100;
 }
 .container{
     overflow: hidden;
 }
 /* navbar*/
 nav{
-
+    
     
     ul{
         padding: 0;
@@ -320,7 +321,7 @@ ul.active{
                 text-align: center; 
                 
                 a{
-                    color: wheat;
+                    color: #f3f7fa;
                     text-decoration: none;
                 } 
             }
@@ -355,14 +356,12 @@ ul.active{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    position: absolute;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+   z-index: -1;
     background-color: black;
+    position: static;
     .services_container{
         padding: 20px;
-        margin: 10px;
+        margin: 10px 20px;
         background-color: white;
         min-width: 350px;
         max-width: 350px;
@@ -371,6 +370,7 @@ ul.active{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 20;
         h1{
             font-size: 1.2rem;
             color: black;
@@ -395,7 +395,7 @@ ul.active{
         font-size: 1.7rem;
         width: 100%;
         padding: 30px;
-        color: wheat;
+        color: #f3f7fa;
     }
     h2{
         font-size: 1.2rem;
@@ -434,9 +434,9 @@ ul.active{
         flex-direction: column;
        // backdrop-filter: saturate(70%) blur(30px);
         background-color: black;
-        color: wheat;
+        color: #f3f7fa;
        
-        z-index: 0;
+        z-index: -1;
         height: 100vh;
         position: absolute;
        
@@ -446,6 +446,7 @@ ul.active{
       //  min-height: 100vh;
         overflow-x: hidden;
         margin-left: 250px;
+        padding-bottom: 100px;
         .switch_container{
             .menu-icon{
                 display: none;
@@ -460,14 +461,17 @@ ul.active{
         }
     }
     .about_section, .project_section, .services_section, .contact_section{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         padding-top: 100px;
         padding-bottom: 100px;
         overflow-x: hidden !important;position: relative;
         // .description_container{
         //     padding-right: 50px;
         // }
+    }
+    .services_section{
+        z-index: 0;
     }
     .about_section{
         flex-direction: row;
@@ -479,6 +483,12 @@ ul.active{
     .project_section{
         z-index:-1;
     }
+    .services_section{
+        background-color: transparent;
+        background-color: black;
+        z-index: -1;
+    }
+  
     .contact_section{
         background-color: white;
         z-index: 2;
