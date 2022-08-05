@@ -361,7 +361,7 @@ ul.active{
     position: static;
     .services_container{
         padding: 20px;
-        margin: 10px 20px;
+        margin: 15px;
         background-color: white;
         min-width: 350px;
         max-width: 350px;
@@ -485,12 +485,20 @@ ul.active{
     }
     .services_section{
         background-color: transparent;
+      //  margin-left: 100px;
         background-color: black;
-        z-index: -1;
+       
     }
   
     .contact_section{
         background-color: white;
         z-index: 2;
+    }
+}
+
+@include for-desktop(){
+    .services_section{
+        margin-left: 100px;
+        
     }
 }
