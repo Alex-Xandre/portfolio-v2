@@ -426,9 +426,4 @@ ul.active {
     background-color: white;
     z-index: 2;
   }
-}
-@media (min-width: 1200px) {
-  .services_section {
-    margin-left: 100px;
-  }
 }/*# sourceMappingURL=styles.css.map */

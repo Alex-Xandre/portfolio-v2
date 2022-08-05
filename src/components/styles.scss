@@ -495,10 +495,3 @@ ul.active{
         z-index: 2;
     }
 }
-
-@include for-desktop(){
-    .services_section{
-        margin-left: 100px;
-        
-    }
-}
