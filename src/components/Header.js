@@ -1,45 +1,57 @@
-import React from 'react'
-import {BsCloudSun, BsCloudMoon} from 'react-icons/bs'
-import {AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineFacebook, AiOutlineClose} from 'react-icons/ai'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import React,{useEffect} from 'react'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 import Typewriter from "typewriter-effect";
+import ImageSlider from './ImageSlider';
 
-const Header = ({onSwitch, theme, clicked, onClick}) => {
-  
+const Header = ({theme}) => {
+    useEffect(() => {
+      Aos.init({duration: 1000})
+      Aos.refresh()
+  }, [])
+
+  const slides = [
+    {
+      'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337905/avatar/proj1_bcg3ck.png',
+      'title':'Xcryptaces Website',
+      'url':'https://xcryptaces.com'
+    },
+    {
+      'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337903/avatar/barkmeoww_geoohk.png',
+      'title':'BARKMEOW HEROES',
+      'url':'https://www.barkmeowheroeshq.com/'
+    },
+    {
+      'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337904/avatar/proj5_gjvqka.png',
+      'title':'E LEARNING WEBSITE',
+      'url':'https://elms-bnhs.herokuapp.com/'
+  }
+  ]
+
+  const containerStyles ={
+    width:'300px',
+    height:'280px',
+    margin: '0 auto'
+  }
+
   return (
 
   <header className='header'>
-    <div className='switch_container' >
-      {theme === 'dark' ? 
-        <h3 onClick={onSwitch()} >Switch to Morning mode <BsCloudSun/> </h3>
-        : 
-        <h3 onClick={onSwitch()} >Switch To Night mode <BsCloudMoon/></h3>}
-        
-        <div className='socials_container'>
-          <a href="https://www.linkedin.com/in/alexander-micua-04657a217/" target="_blank" rel='noreferrer'><AiOutlineLinkedin/></a>
-          <a href="https://github.com/Alex-Xandre" target="_blank" rel='noreferrer'> <AiOutlineGithub/></a>
-          <a href="https://www.instagram.com/xndrmcua/" target="_blank" rel='noreferrer'><AiOutlineInstagram/></a>
-         <a href="https://web.facebook.com/xander.micua.9" target="_blank" rel='noreferrer'><AiOutlineFacebook/></a>
-        </div>
-
-        <div className='menu-icon' onClick={onClick()}>
-               {clicked === true ? <GiHamburgerMenu/> :<AiOutlineClose/>}
-          </div>
-    </div>
-
+    
     <section className='hero_section'>
-       <img src='https://res.cloudinary.com/dgtgmqx08/image/upload/v1659328905/avatar/main-image_nblsga.png' alt='logo'/>
-         
-        <a  href="https://www.linkedin.com/in/alexander-micua-04657a217/" target="_blank" rel='noreferrer'> <button>Hire a freelancer</button></a>
-
+       <img src='https://res.cloudinary.com/dgtgmqx08/image/upload/v1659328905/avatar/main-image_nblsga.png' alt='logo'/>        
+    </section>
+   
+    <section className='hero_description'>     
+      <div className='title'>
         <h1>    
-       {theme === 'light' ?  <Typewriter
+        {theme === 'light' ?  <Typewriter
             options={{
               strings:  'Front end developer at MKGB IT solutions',
               autoStart: true,
               loop: true, delay:100
             }}
-          />:
+          />: 
           <Typewriter
           options={{
             strings:  ['Xcrypt Aces Head Developer and co-founder', 'Freelancer'],
@@ -48,9 +60,32 @@ const Header = ({onSwitch, theme, clicked, onClick}) => {
           }}
         />}
         </h1>
-        
+        <h2>A 22 year old developer who found his passion on programming, based on Luna, La Union</h2>
+        <h2>Don't limit your challenges, challenge your limits. It is always impossible until its done.</h2>
+          <div className='hero_options'>
+            <a  href="https://www.linkedin.com/in/alexander-micua-04657a217/" target="_blank" rel='noreferrer'> <button>Hire a freelancer</button></a>
+            <button className='call_btn'>Schedule a call</button>
+          </div>
+      </div>  
+      <div className='project_summary' data-aos ="fade-up">
+        <h1>Latest Projects</h1>
+
+       {/* slider for mobile */}
+        <div style={containerStyles} className="project_slider">
+           <ImageSlider slides = {slides}/>
+        </div>
+
+        {/* slider summary for desktop */}
+        <div className='project_summary_container'>
+          {slides.slice(0,2).map((slide, index) => {
+            return(
+              <img src={slide.img}alt ="project" key={index}/>
+            )
+          })}
+        </div>
+        <a href='/projects'><button>View All</button></a>
+      </div>   
     </section>
-    
   </header>
   )
 }

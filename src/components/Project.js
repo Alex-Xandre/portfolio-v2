@@ -1,8 +1,8 @@
 export const Project =[
     {
-        'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337905/avatar/proj1_bcg3ck.png',
+        'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1660023697/avatar/xcryptaces_sbkhnp.png',
         'title':'Xcryptaces Website',
-        'description':'Xcrypt Aces is a mentoring website for crypto currency trading which help over 600 students to improve their trading skills',
+        'description':'A mentoring website for cryptocurrency trading which help over 600 students to improve their trading skills',
         'tech':'MERN Stack, SCSS',
         'btn_txt':'View Site',
         'url':'https://xcryptaces.com'
@@ -32,7 +32,7 @@ export const Project =[
         'url':'https://elms-bnhs.herokuapp.com/'
     },
     {
-        'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659507130/avatar/port_jed2rc.png',
+        'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1660024391/avatar/port_tsvhjr.png',
         'title':'This Website',
         'description':'My portfolio',
         'tech':'React',

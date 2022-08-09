@@ -16,7 +16,7 @@ const Projects = () => {
         <h1><span>&#60;</span> Projects <span> &#62;</span></h1>
         {Project.map((proj, index) =>{
             return(
-                <div className='project' data-aos ="fade-right" key ={index}>    
+                <div className='project' data-aos ="fade-left" key ={index}>    
                 <img src= {proj.img} alt="screenshot"/>
                 <div className="overlay overlayLeft">  
                     <h1><span>&#60;</span> {proj.title} <span>&#47;&#62; </span></h1>

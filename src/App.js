@@ -10,6 +10,9 @@ import Projects from './components/Projects';
 import './App.css'
 import Services from './components/Services';
 import Contact from './components/Contact';
+import { Routes, Route } from 'react-router-dom';
+
+
 
 const StyledApp = styled.div `
 color: ${(props) => props.theme.fontColor}` 
@@ -29,20 +32,28 @@ function App() {
      <ThemeProvider theme={theme === "light"? lighterTheme: darkerTheme}>
       <GlobalStyles/>
         <StyledApp>
-        <Navbar clicked={clicked} onClick={() => handleClick}/>
+        <Navbar clicked={clicked} onClick={() => handleClick}  onSwitch = {() => themeToggler}  theme={theme} />
          <div className='container'>
-         <Header onSwitch = {() => themeToggler}  theme={theme} onClick={()=> handleClick} clicked={clicked}/>
+         {/* <Header onClick={()=> handleClick} clicked={clicked}/> */}
             <ThemeProvider theme={theme === "light"? lightTheme: darkTheme}>
                 <GlobalStylesAboutSection/>
                   <StyledApp>
-                    <About/>
+                  <Routes>
+                     <Route path="/" element={<Header theme={theme}/>}/>
+                     <Route path="/about" element={<About/>}/>   
+                     <Route path="/projects" element={<Projects/>}/>
+                     <Route path="/service" element={<Services/>}/>
+                     <Route path="/contact" element={<Contact/>}/>
+                   </Routes>  
                   </StyledApp>
                 <GlobalStylesAboutSection/>
             </ThemeProvider>
-          <Projects />
+          {/* <Projects />
           <Services/>
-          <Contact/>
+          <Contact/> */}
          </div>
+        
+        {/* <Footer/> */}
         </StyledApp>
       <GlobalStyles/>
     </ThemeProvider>

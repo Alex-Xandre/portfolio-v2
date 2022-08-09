@@ -10,7 +10,7 @@ const Services = () => {
         Aos.refresh()
     }, [])
   return (
-    <section className='services_section'  data-aos ="fade-up" id ="service">
+    <section className='services_section'  data-aos ="fade-left" id ="service">
         <h1><span>&#60;</span> Services <span> &#62;</span></h1>
             {Service.map((serc, index) =>{
                 return(
