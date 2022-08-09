@@ -47,7 +47,7 @@ const Header = ({theme}) => {
         <h1>    
         {theme === 'light' ?  <Typewriter
             options={{
-              strings:  'Front end developer at MKGB IT solutions',
+              strings:  'Front-end developer at MKBG IT solutions',
               autoStart: true,
               loop: true, delay:100
             }}
