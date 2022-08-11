@@ -69,9 +69,6 @@ nav ul li a {
   color: #20AFFF;
   text-decoration: none;
 }
-nav ul li .activelink {
-  color: rebeccapurple;
-}
 nav ul li:hover {
   color: #20AFFF;
 }
@@ -139,6 +136,7 @@ ul.active {
   padding: 20px;
   padding-top: 0;
   font-weight: 400;
+  opacity: 0.8;
   font-size: 1.3rem;
   text-align: center;
 }
@@ -595,4 +593,7 @@ footer h1 {
   .about_section {
     flex-direction: row;
   }
+}
+.activelink {
+  color: rebeccapurple;
 }/*# sourceMappingURL=styles.css.map */

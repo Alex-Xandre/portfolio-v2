@@ -64,7 +64,7 @@ const Header = ({theme}) => {
         <h2>Don't limit your challenges, challenge your limits. It is always impossible until its done.</h2>
           <div className='hero_options'>
             <a  href="https://www.linkedin.com/in/alexander-micua-04657a217/" target="_blank" rel='noreferrer'> <button>Hire a freelancer</button></a>
-            <button className='call_btn'>Schedule a call</button>
+            {/* <button className='call_btn'>Schedule a call</button> */}
           </div>
       </div>  
       <div className='project_summary' data-aos ="fade-up">
