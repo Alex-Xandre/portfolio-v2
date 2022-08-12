@@ -40,9 +40,9 @@ const Navbar = ({clicked, onClick, theme, onSwitch}) => {
       
         <div className='switch_container' >
         {theme === 'dark' ? 
-        <h3 onClick={onSwitch()} >Light theme<BsCloudSun/> </h3>
+        <h3 onClick={onSwitch()} >Light theme <BsCloudSun/> </h3>
         : 
-        <h3 onClick={onSwitch()} >Dark theme<BsCloudMoon/></h3>}
+        <h3 onClick={onSwitch()} >Dark theme <BsCloudMoon/></h3>}
 
           <div className='menu-icon' onClick={onClick()}>
                {clicked === true ? <GiHamburgerMenu/> :<AiOutlineClose/>}
