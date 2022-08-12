@@ -57,6 +57,7 @@ nav{
         position: sticky;
         h3{
             width: fit-content;
+           
         }
 
         .menu-icon{
@@ -246,25 +247,27 @@ ul.active{
     position: relative;
     overflow: hidden;
 
-    .description_container{
+    .description_container,.title_container{
         h1, h2, h3{
             font-weight: 400;
-            text-align: center;
+            text-align: left;
             padding: 0;
-            padding-top: 20px;
-           
+            //padding-top: 20px;
+            text-align: justify;
             line-height: 25px;
             span{
                 color: $light-blue;
             }
         }
         h1{
-            font-size: 1.7rem;
-            padding: 30px;
+            font-size: 2rem;
+            //padding: 30px;
             opacity: .8;
         }
         h2{
             font-size: 1.2rem;
+            padding-top: 20px;
+            font-weight: 400;
         }
         h3{
             font-size: 1rem;
@@ -281,23 +284,130 @@ ul.active{
             width: 100%;
             padding-bottom: 30px;
             font-weight: 400;
-            font-size: 1.7rem;
-            text-align: center;
+            font-size: 2rem;
+            text-align: left;
             padding-top: 30px;
             opacity: .8;
             span{
                 color: $light-blue;
             }
         }
-        img{
-            margin: 10px;
-            width: 50px;
+        .tech_img_container{
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: #f3f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                margin: 10px;
+                width: 50px;    
+            }
         }
-        img:hover{
+        .tech_img_container:hover{
             transform: scale(1.2);
             transition-duration: .3s;
             overflow: hidden;
         }
+     
+    }
+
+    .experience_container{
+        margin: 0;
+        width: 100%;
+       
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        h1{
+            font-weight: 400;
+            text-align: left;
+            padding: 0;
+            //padding-top: 20px;
+            text-align: left;
+            line-height: 25px;
+            font-size: 2rem;
+            opacity: .8;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            align-self: flex-start;
+            span{
+                color: $light-blue;
+            }
+        }
+        .experience{
+            position: relative;
+            height: 170px;
+            max-width: 350px;
+            .exp_content{
+                border-radius: 3px;
+              background-color: #f3f7fa;
+              color: black;   
+              padding: 10px;
+              height: fit-content;
+              min-height: 120px;
+              h1,h2{
+                padding: 0;
+                margin: 0;
+              }
+              h1{
+                font-size: 1.3rem;
+                font-weight: 500;
+                
+              }
+              h2{
+                font-size: 1rem;
+                font-weight: 300;
+                margin-top: 5px;
+              }
+            }
+
+            h3{
+                position: absolute;
+                bottom: 5px;
+                font-weight: 500;
+                font-size: 1.2rem;
+                opacity: .8;
+                right: 3px;
+                padding-right: 0;
+            }
+        }
+        .experience:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: calc(50% + 6px);
+            z-index: -9;
+            width: 3px;
+            background-color: $light-blue;
+            
+        }
+        .experience:after{
+            content: '';
+            border-radius: 50%;
+            background-color: #f3f7fa;
+            position: absolute;
+            border: 5px solid $light-blue;
+            left: 50%;
+            height: 5px;
+            bottom: 0;
+           
+            width: 5px;
+            animation: blinker 3s linear infinite;
+            
+        }
+        @keyframes blinker {
+            50% {
+              opacity: 0;
+            }
+          }
     }
 }
 
@@ -344,9 +454,11 @@ ul.active{
             overflow: hidden;
             max-width: 350px;
             min-height: 300px;
-            background-image: linear-gradient($light-blue, #f0f0f0);
+            background-image: linear-gradient(#f3f7fa, white);
+            border-radius: 5px;
             
             img{
+                
                 width: 100%;
                 height: 250px;
                 overflow: hidden;
@@ -436,7 +548,8 @@ ul.active{
     .services_container{
         padding: 20px;
         margin: 15px;
-        background-color: white;
+        background-color: #f3f7fa;
+        border-radius: 5px;
         min-width: 350px;
         max-width: 350px;
         height: 220px;
@@ -632,14 +745,14 @@ footer{
             padding: 50px;
         }
         .description_container{
-            flex: 8;
+            flex: 6;
             h1{
                 font-size: 5rem;
                 padding: 50px;
             }
         }
         .tech_container{
-            flex: 4;
+            flex: 6;
             h1{
                 font-size: 3rem;
             }
@@ -649,10 +762,55 @@ footer{
         z-index: 0;
     }
     .about_section{
-        flex-direction: row;
+      flex-wrap: wrap;
+      flex-direction: row;
+    
+        .title_container{
+            width: 100%;
+            margin: 0;
+            margin-top: 50px;
+          
+            h1{
+                font-size: 5rem;
+                //padding: 30px;
+                opacity: .8;
+            }
+            h2{
+                font-size: 1.3rem;
+                margin: 30px 0;
+            }  
+        }
+
+        .description_container{
+            width: 50%;  
+            margin-right: 5%;
+        }
+    
+        .tech_container{
+           width: 50%;
+           h1{
+            font-size: 2rem;
+           }
+        }
+    
+        .experience_container{
+          display: flex;
+          margin-top: 50px;
+          h1{
+            align-self: center;
+          }
+            
+            .experience{
+              //  align-self: flex-start;
+                position: relative;
+                height: 170px;
+                max-width: 500px;
+               
+                .exp_content{
+                    min-width: 500px;
+                  box-shadow: 0 2px 2px $light-blue;
+            }
+        }
     }
 }
-
-.activelink{
-    color: rebeccapurple;
- } 
+}

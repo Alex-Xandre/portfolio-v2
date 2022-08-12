@@ -11,7 +11,7 @@ const Services = () => {
     }, [])
   return (
     <section className='services_section'  data-aos ="fade-left" id ="service">
-        <h1><span>&#60;</span> Services <span> &#62;</span></h1>
+        <h1><span>&#60;</span> Services <span>  &#47;&#62;</span></h1>
             {Service.map((serc, index) =>{
                 return(
                     <div className ="services_container" key={index} >
@@ -21,7 +21,7 @@ const Services = () => {
                 )
             })
             }
-        <h1><span>&#60; &#47;</span> Services <span>  &#62;</span></h1>
+       
     </section>
   )
 }

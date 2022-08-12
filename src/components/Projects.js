@@ -13,8 +13,8 @@ const Projects = () => {
 
   return (
     <section className='project_section'  data-aos ="fade-left" id ="projects">
-        <h1><span>&#60;</span> Projects <span> &#62;</span></h1>
-        {Project.map((proj, index) =>{
+       <h1><span>&#60;</span> Projects <span>  &#47;&#62;</span></h1>
+         {Project.map((proj, index) =>{
             return(
                 <div className='project' data-aos ="fade-left" key ={index}>    
                 <img src= {proj.img} alt="screenshot"/>
@@ -28,7 +28,7 @@ const Projects = () => {
             )
         })}
 
-        <h1><span>&#60; &#47;</span> Projects <span>  &#62;</span></h1>
+       
     </section>
   )
 }

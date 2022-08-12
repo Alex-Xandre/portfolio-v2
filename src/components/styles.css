@@ -215,25 +215,26 @@ ul.active {
   position: relative;
   overflow: hidden;
 }
-.about_section .description_container h1, .about_section .description_container h2, .about_section .description_container h3 {
+.about_section .description_container h1, .about_section .description_container h2, .about_section .description_container h3, .about_section .title_container h1, .about_section .title_container h2, .about_section .title_container h3 {
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   padding: 0;
-  padding-top: 20px;
+  text-align: justify;
   line-height: 25px;
 }
-.about_section .description_container h1 span, .about_section .description_container h2 span, .about_section .description_container h3 span {
+.about_section .description_container h1 span, .about_section .description_container h2 span, .about_section .description_container h3 span, .about_section .title_container h1 span, .about_section .title_container h2 span, .about_section .title_container h3 span {
   color: #20AFFF;
 }
-.about_section .description_container h1 {
-  font-size: 1.7rem;
-  padding: 30px;
+.about_section .description_container h1, .about_section .title_container h1 {
+  font-size: 2rem;
   opacity: 0.8;
 }
-.about_section .description_container h2 {
+.about_section .description_container h2, .about_section .title_container h2 {
   font-size: 1.2rem;
+  padding-top: 20px;
+  font-weight: 400;
 }
-.about_section .description_container h3 {
+.about_section .description_container h3, .about_section .title_container h3 {
   font-size: 1rem;
 }
 .about_section .tech_container {
@@ -247,22 +248,127 @@ ul.active {
   width: 100%;
   padding-bottom: 30px;
   font-weight: 400;
-  font-size: 1.7rem;
-  text-align: center;
+  font-size: 2rem;
+  text-align: left;
   padding-top: 30px;
   opacity: 0.8;
 }
 .about_section .tech_container h1 span {
   color: #20AFFF;
 }
-.about_section .tech_container img {
+.about_section .tech_container .tech_img_container {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #f3f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_section .tech_container .tech_img_container img {
   margin: 10px;
   width: 50px;
 }
-.about_section .tech_container img:hover {
+.about_section .tech_container .tech_img_container:hover {
   transform: scale(1.2);
   transition-duration: 0.3s;
   overflow: hidden;
+}
+.about_section .experience_container {
+  margin: 0;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+.about_section .experience_container h1 {
+  font-weight: 400;
+  text-align: left;
+  padding: 0;
+  text-align: left;
+  line-height: 25px;
+  font-size: 2rem;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  align-self: flex-start;
+}
+.about_section .experience_container h1 span {
+  color: #20AFFF;
+}
+.about_section .experience_container .experience {
+  position: relative;
+  height: 170px;
+  max-width: 350px;
+}
+.about_section .experience_container .experience .exp_content {
+  border-radius: 3px;
+  background-color: #f3f7fa;
+  color: black;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 120px;
+}
+.about_section .experience_container .experience .exp_content h1, .about_section .experience_container .experience .exp_content h2 {
+  padding: 0;
+  margin: 0;
+}
+.about_section .experience_container .experience .exp_content h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.about_section .experience_container .experience .exp_content h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.about_section .experience_container .experience h3 {
+  position: absolute;
+  bottom: 5px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  right: 3px;
+  padding-right: 0;
+}
+.about_section .experience_container .experience:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: calc(50% + 6px);
+  z-index: -9;
+  width: 3px;
+  background-color: #20AFFF;
+}
+.about_section .experience_container .experience:after {
+  content: "";
+  border-radius: 50%;
+  background-color: #f3f7fa;
+  position: absolute;
+  border: 5px solid #20AFFF;
+  left: 50%;
+  height: 5px;
+  bottom: 0;
+  width: 5px;
+  -webkit-animation: blinker 3s linear infinite;
+          animation: blinker 3s linear infinite;
+}
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .project_section, .contact_section {
@@ -307,7 +413,8 @@ ul.active {
   overflow: hidden;
   max-width: 350px;
   min-height: 300px;
-  background-image: linear-gradient(#20AFFF, #f0f0f0);
+  background-image: linear-gradient(#f3f7fa, white);
+  border-radius: 5px;
 }
 .project_section .project img, .contact_section .project img {
   width: 100%;
@@ -392,7 +499,8 @@ ul.active {
 .services_section .services_container {
   padding: 20px;
   margin: 15px;
-  background-color: white;
+  background-color: #f3f7fa;
+  border-radius: 5px;
   min-width: 350px;
   max-width: 350px;
   height: 220px;
@@ -575,14 +683,14 @@ footer h1 {
     padding: 50px;
   }
   .about_section .description_container, .project_section .description_container, .services_section .description_container, .contact_section .description_container {
-    flex: 8;
+    flex: 6;
   }
   .about_section .description_container h1, .project_section .description_container h1, .services_section .description_container h1, .contact_section .description_container h1 {
     font-size: 5rem;
     padding: 50px;
   }
   .about_section .tech_container, .project_section .tech_container, .services_section .tech_container, .contact_section .tech_container {
-    flex: 4;
+    flex: 6;
   }
   .about_section .tech_container h1, .project_section .tech_container h1, .services_section .tech_container h1, .contact_section .tech_container h1 {
     font-size: 3rem;
@@ -591,9 +699,46 @@ footer h1 {
     z-index: 0;
   }
   .about_section {
+    flex-wrap: wrap;
     flex-direction: row;
   }
-}
-.activelink {
-  color: rebeccapurple;
+  .about_section .title_container {
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+  .about_section .title_container h1 {
+    font-size: 5rem;
+    opacity: 0.8;
+  }
+  .about_section .title_container h2 {
+    font-size: 1.3rem;
+    margin: 30px 0;
+  }
+  .about_section .description_container {
+    width: 50%;
+    margin-right: 5%;
+  }
+  .about_section .tech_container {
+    width: 50%;
+  }
+  .about_section .tech_container h1 {
+    font-size: 2rem;
+  }
+  .about_section .experience_container {
+    display: flex;
+    margin-top: 50px;
+  }
+  .about_section .experience_container h1 {
+    align-self: center;
+  }
+  .about_section .experience_container .experience {
+    position: relative;
+    height: 170px;
+    max-width: 500px;
+  }
+  .about_section .experience_container .experience .exp_content {
+    min-width: 500px;
+    box-shadow: 0 2px 2px #20AFFF;
+  }
 }/*# sourceMappingURL=styles.css.map */
