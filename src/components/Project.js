@@ -7,14 +7,14 @@ export const Project =[
         'btn_txt':'View Site',
         'url':'https://xcryptaces.com'
     },
-    {
-        'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337905/avatar/proj2_xafrzv.png',
-        'title':'Halingo',
-        'description':'Implemented some admin features on the system and profile feature. Halingo is an administrative tool for speech therapist.',
-        'tech':'MERN Stack, Material UI, CSS, NX',
-        'btn_txt':'View Site',
-        'url':'https://www.halingo.be/'
-    },
+    // {
+    //     'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337905/avatar/proj2_xafrzv.png',
+    //     'title':'Halingo',
+    //     'description':'Implemented some admin features on the system and profile feature. Halingo is an administrative tool for speech therapist.',
+    //     'tech':'MERN Stack, Material UI, CSS, NX',
+    //     'btn_txt':'View Site',
+    //     'url':'https://www.halingo.be/'
+    // },
     {
         'img':'https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337903/avatar/barkmeoww_geoohk.png',
         'title':'BARKMEOW HEROES',
