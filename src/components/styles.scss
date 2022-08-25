@@ -93,6 +93,9 @@ nav{
         }
         li:hover{
             color: $light-blue;
+            opacity: 1;
+            transform: translateY(-3px);
+            transition-duration: .5s;
             span{
                 opacity: 1;
             }
@@ -128,8 +131,10 @@ nav{
     display:none;
 }
 ul.active{
-    display: initial;
-    
+    display: initial; 
+}
+.activelink   {
+   //design active link
 }
 /*header*/
 .header{
@@ -182,18 +187,20 @@ ul.active{
                     width: fit-content;
                     font-size: 1rem;
                     background-color: $light-blue;
-                    opacity: .8;
-                    color: black;
+                    color: #fafafc;
                     border: none;
                     font-family: 'Varela Round', sans-serif;
                     padding: 1em;
                     font-weight: 400;
                     letter-spacing: 1px;
                     border-radius: 5px;
-                    text-align: center;  
+                    text-align: center;
+                  
                 }
                 button:hover{
                     opacity: 1;
+                    transform: translateY(-4px);
+                    transition-duration: .5s;
                 }
                 .call_btn{
                     background-color: aliceblue;
@@ -219,8 +226,8 @@ ul.active{
                     width: fit-content;
                     font-size: 1rem;
                     background-color: $light-blue;
-                    opacity: .8;
-                    color: black;
+                    
+                    color: #fafafc;
                     border: none;
                     font-family: 'Varela Round', sans-serif;
                     padding: 1em;
@@ -233,6 +240,8 @@ ul.active{
             }
             button:hover{
                 opacity: 1;
+                transform: translateY(-4px);
+                transition-duration: .5s;
             }
         }
     }
@@ -309,9 +318,9 @@ ul.active{
             }
         }
         .tech_img_container:hover{
-            transform: scale(1.2);
-            transition-duration: .3s;
-            overflow: hidden;
+            opacity: 1;
+            transform: translateY(-4px);
+            transition-duration: .5s;
         }
      
     }
@@ -347,7 +356,7 @@ ul.active{
             height: 170px;
             max-width: 350px;
             .exp_content{
-                border-radius: 3px;
+              border-radius: 3px;
               background-color: #f3f7fa;
               color: black;   
               padding: 10px;
@@ -514,6 +523,8 @@ ul.active{
             }
             button:hover{
                 opacity: 1;
+                transform: translateY(-4px);
+                transition-duration: .5s;
             }
 
         }
@@ -568,6 +579,11 @@ ul.active{
         h2{
             color: black;
         }
+    }
+    .services_container:hover{
+        opacity: 1;
+        transform: translateY(-4px);
+        transition-duration: .5s;
     }
     h1, h2, h3{
         font-weight: 400;
@@ -625,7 +641,7 @@ footer{
         padding-right: 30px;
         flex-direction: row;
         align-items: center;
-       justify-content: space-between;
+        justify-content: space-between;
         .switch_container{
             .menu-icon{
                 display: none;
@@ -647,13 +663,16 @@ footer{
             }
             a:hover{
                 svg{
+                  
                     opacity: 1;
+                    transform: translateY(-4px);
+                    transition-duration: .5s;
                 }
             }
         }
     }
     ul.active, ul.inactive{
-        margin-left: 50px;
+       
         display: flex;
         z-index: 10;   
         width: fit-content; 
@@ -705,9 +724,9 @@ footer{
                         
                     }
                     img:hover{
-                        transform: scale(1.1);
-                        transition-delay: 1s;
-                        transition: all ease 1s;
+                        opacity: 1;
+                        transform: translateY(-4px);
+                        transition-duration: .5s;
                     }
                 }
                 h1{

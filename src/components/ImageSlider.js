@@ -23,17 +23,17 @@ const ImageSlider = ({slides}) => {
         top:'50%',
         transform:'translate(0, -50%)',
         left:'20px',
-        fontSize:'45px',
+        fontSize:'80px',
         color:'#20AFFF',
         zIndex:'1',
-        cursor:'pointer'
+        cursor:'pointer',
     }
     const rightArrowStyles ={
         position:"absolute", 
         top:'50%',
         transform:'translate(0, -50%)',
         right:'20px',
-        fontSize:'45px',
+        fontSize:'80px',
         color:'#20AFFF',
         zIndex:'1',
         cursor:'pointer'
@@ -53,8 +53,8 @@ const ImageSlider = ({slides}) => {
 
   return (
     <div style={sliderStyles}>
-        <div style={leftArrowStyles} onClick={goToPrevious}>&lt;</div>
-        <div style={rightArrowStyles}  onClick={goToNext}>&gt;</div>
+        <div style={leftArrowStyles} onClick={goToPrevious}>&#8249;</div>
+        <div style={rightArrowStyles}  onClick={goToNext}>&#8250;</div>
         <div style={slideStyles}></div>
     </div>
   )

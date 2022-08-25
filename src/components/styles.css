@@ -74,6 +74,9 @@ nav ul li a {
 }
 nav ul li:hover {
   color: #20AFFF;
+  opacity: 1;
+  transform: translateY(-3px);
+  transition-duration: 0.5s;
 }
 nav ul li:hover span {
   opacity: 1;
@@ -155,8 +158,7 @@ ul.active {
   width: fit-content;
   font-size: 1rem;
   background-color: #20AFFF;
-  opacity: 0.8;
-  color: black;
+  color: #fafafc;
   border: none;
   font-family: "Varela Round", sans-serif;
   padding: 1em;
@@ -167,6 +169,8 @@ ul.active {
 }
 .header .hero_description .title .hero_options button:hover {
   opacity: 1;
+  transform: translateY(-4px);
+  transition-duration: 0.5s;
 }
 .header .hero_description .title .hero_options .call_btn {
   background-color: aliceblue;
@@ -193,8 +197,7 @@ ul.active {
   width: fit-content;
   font-size: 1rem;
   background-color: #20AFFF;
-  opacity: 0.8;
-  color: black;
+  color: #fafafc;
   border: none;
   font-family: "Varela Round", sans-serif;
   padding: 1em;
@@ -207,6 +210,8 @@ ul.active {
 }
 .header .hero_description .project_summary button:hover {
   opacity: 1;
+  transform: translateY(-4px);
+  transition-duration: 0.5s;
 }
 
 .about_section {
@@ -274,9 +279,9 @@ ul.active {
   width: 50px;
 }
 .about_section .tech_container .tech_img_container:hover {
-  transform: scale(1.2);
-  transition-duration: 0.3s;
-  overflow: hidden;
+  opacity: 1;
+  transform: translateY(-4px);
+  transition-duration: 0.5s;
 }
 .about_section .experience_container {
   margin: 0;
@@ -472,6 +477,8 @@ ul.active {
 }
 .project_section .overlay button:hover, .contact_section .overlay button:hover {
   opacity: 1;
+  transform: translateY(-4px);
+  transition-duration: 0.5s;
 }
 .project_section .project:hover .overlay, .contact_section .project:hover .overlay {
   opacity: 1;
@@ -519,6 +526,11 @@ ul.active {
 }
 .services_section .services_container h2 {
   color: black;
+}
+.services_section .services_container:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+  transition-duration: 0.5s;
 }
 .services_section h1, .services_section h2, .services_section h3 {
   font-weight: 400;
@@ -592,9 +604,10 @@ footer h1 {
   }
   nav .socials_container a:hover svg {
     opacity: 1;
+    transform: translateY(-4px);
+    transition-duration: 0.5s;
   }
   ul.active, ul.inactive {
-    margin-left: 50px;
     display: flex;
     z-index: 10;
     width: -webkit-fit-content;
@@ -645,9 +658,9 @@ footer h1 {
     margin-right: 10px;
   }
   .header .hero_description .project_summary .project_summary_container img:hover {
-    transform: scale(1.1);
-    transition-delay: 1s;
-    transition: all ease 1s;
+    opacity: 1;
+    transform: translateY(-4px);
+    transition-duration: 0.5s;
   }
   .header .hero_description .project_summary h1 {
     text-align: center;

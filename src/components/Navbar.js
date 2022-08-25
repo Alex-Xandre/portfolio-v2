@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineClose} from 'react-icons/ai'
 import { BsCloudMoon, BsCloudSun } from 'react-icons/bs'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import './styles.css'
 import { AiOutlineLinkedin,AiOutlineGithub, AiOutlineFacebook,AiOutlineInstagram } from 'react-icons/ai'
 
@@ -54,12 +54,12 @@ const Navbar = ({clicked, onClick, theme, onSwitch}) => {
                 return(
                     <li key ={index}>
                         <span>&#60;</span> &nbsp; 
-                        <Link to = {item.url} onClick={onClick()} 
-                        //  className={(isActive) => isActive ? 'activelink':'j'}
+                        <NavLink to = {item.url} onClick={onClick()} 
+                         className={({isActive}) => isActive ? 'activelink':'j'}
                           >
                             {item.title}
                             
-                        </Link>
+                        </NavLink>
                         <span> &#47; &#62;</span>
                     </li>
                 )

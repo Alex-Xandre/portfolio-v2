@@ -29,7 +29,7 @@ const Header = ({theme}) => {
   ]
 
   const containerStyles ={
-    width:'300px',
+    width:'100%',
     height:'280px',
     margin: '0 auto'
   }
