@@ -79,7 +79,8 @@ const Header = ({theme}) => {
         <div className='project_summary_container'>
           {slides.slice(0,2).map((slide, index) => {
             return(
-              <img src={slide.img}alt ="project" key={index}/>
+              
+              <a href={slide.url} target="_blank" rel='noreferrer'><img src={slide.img}alt ="project" key={index}/></a>
             )
           })}
         </div>
