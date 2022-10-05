@@ -69,7 +69,7 @@ const experience = [
   {
     title: "Graduation",
     desc: "Graduated at STI College Vigan, Computer Science",
-    year: "2022",
+    year: "2022", 
   },
   {
     title: "Started Freelancing",
