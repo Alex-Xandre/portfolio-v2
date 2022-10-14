@@ -1,15 +1,15 @@
 export const Service = [
   {
     title: "Fullstack Web Development",
-    description: "Modify/Create Full Stack Web Application from scratch",
+    description: "Website Creation/Maintenance",
   },
   {
     title: "Frontend Web Development",
-    description: "Create/Implement Landing Pages/Front End ",
+    description: "Website frontend Implementation",
   },
   {
     title: "Backend Web Development",
-    description: "Collaboration/Create the backend of the website",
+    description: "Website backend Collaboration/Creation",
   },
   {
     title: "Web Design",

@@ -83,7 +83,6 @@ const Header = ({ theme }) => {
               },
             },
             number: {
-              
               density: {
                 enable: true,
                 area: 800,
@@ -116,7 +115,7 @@ const Header = ({ theme }) => {
             {theme === "light" ? (
               <Typewriter
                 options={{
-                  strings: "Front-end developer",
+                  strings: ["Full Stack Web Developer", "Software Engineer"],
                   autoStart: true,
                   loop: true,
                   delay: 100,
