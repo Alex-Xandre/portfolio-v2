@@ -34,11 +34,11 @@ const Navbar = ({ clicked, onClick, theme, onSwitch }) => {
       <div className="switch_container">
         {theme === "dark" ? (
           <h3 onClick={onSwitch()}>
-            Light theme <BsCloudSun />{" "}
+             <BsCloudSun />{" "}
           </h3>
         ) : (
           <h3 onClick={onSwitch()}>
-            Dark theme <BsCloudMoon />
+            <BsCloudMoon />
           </h3>
         )}
 

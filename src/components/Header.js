@@ -3,15 +3,15 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Typewriter from "typewriter-effect";
 
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+//import Particles from "react-tsparticles";
+//import { loadFull } from "tsparticles";
 
 const Header = ({ theme }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
     Aos.refresh();
   }, []);
-  const particlesInit = React.useCallback(async (engine) => {
+ /* const particlesInit = React.useCallback(async (engine) => {
     //console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -22,10 +22,10 @@ const Header = ({ theme }) => {
   const particlesLoaded = React.useCallback(async (container) => {
     //await console.log(container);
   }, []);
-
+*/
   return (
     <header className="header">
-      <Particles
+      {/*<Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -101,7 +101,7 @@ const Header = ({ theme }) => {
           },
           detectRetina: true,
         }}
-      />
+      />*/}
       <section className="hero_section">
         <img
           src="https://res.cloudinary.com/dgtgmqx08/image/upload/v1664201431/avatar/mainimage-removebg-preview_pqlleo.png"
@@ -110,6 +110,7 @@ const Header = ({ theme }) => {
       </section>
 
       <section className="hero_description">
+        <h1><span>Hi. </span> You can call me Xandre</h1>
         <div className="title">
           <h1>
             {theme === "light" ? (
