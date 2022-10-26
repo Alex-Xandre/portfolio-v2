@@ -10,7 +10,7 @@ export const Project = [
   },
   {
     img: "https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337903/avatar/barkmeoww_geoohk.png",
-    title: "BARKMEOW HEROES",
+    title: "Barkmeow Heroes",
     description:
       "Develop a landing page website for Barkmeow a NFT project based on California",
     tech: "React, HTML, CSS",
@@ -19,7 +19,7 @@ export const Project = [
   },
   {
     img: "https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337904/avatar/proj5_gjvqka.png",
-    title: "E LEARNING WEBSITE",
+    title: "E Learning Website",
     description: "E Learning Website for Bacnotan national highschool",
     tech: "MERN Stack, Bootstrap",
     btn_txt: "View Site",

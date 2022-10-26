@@ -29,12 +29,23 @@ const MenuItems = [
 ];
 
 const Navbar = ({ clicked, onClick, theme, onSwitch }) => {
+  const [navbar, setNavbar] = React.useState(false);
+
+  const changeBackgroundNav = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackgroundNav);
+
   return (
-    <nav>
+    <nav className={navbar ? "box-shadow_nav":"nav"}>
       <div className="switch_container">
         {theme === "dark" ? (
           <h3 onClick={onSwitch()}>
-             <BsCloudSun />{" "}
+            <BsCloudSun />{" "}
           </h3>
         ) : (
           <h3 onClick={onSwitch()}>

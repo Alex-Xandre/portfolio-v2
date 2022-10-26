@@ -20,7 +20,7 @@ const Projects = () => {
             <img src={proj.img} alt="screenshot" />
             <div className="overlay overlayLeft">
               <h1>
-                <span>&#60;</span> {proj.title} <span>&#47;&#62; </span>
+               {proj.title}
               </h1>
               <h2>{proj.description}</h2>
               <h2>

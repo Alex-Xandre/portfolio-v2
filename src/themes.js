@@ -14,7 +14,7 @@ export const lighterTheme = {
 };
 
 export const darkerTheme = {
-  body: "#1f202e",
+  body: "#1E1B1B",
   fontColor: "#f3f7fa",
 };
 

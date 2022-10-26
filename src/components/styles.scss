@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Poppins:wght@200;300;400;500;600&family=Varela+Round&display=swap");
 /*color*/
 $hover-red: rgb(202, 82, 82);
 $light-blue: #20afff;
-$contrast-blue: #0029ff;
+$contrast-blue: #3354ff;
 
 @mixin for-tablet {
   @media (min-width: 768px) {
@@ -47,7 +47,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 5;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
   .logo {
     font-weight: 600;
     font-size: 1.5rem;
@@ -64,11 +64,9 @@ nav {
     h3 {
       width: fit-content;
     }
-
     .menu-icon {
       position: absolute;
-      right: 2em;
-
+      right: 1em;
       svg {
         font-size: 1.2rem;
       }
@@ -80,6 +78,7 @@ nav {
     width: 250px;
 
     li {
+      font-family: 'Poppins', sans-serif;
       list-style: none;
       font-size: 1.2rem;
       padding: 20px;
@@ -105,6 +104,10 @@ nav {
     }
   }
 }
+
+.box-shadow_nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
 .inactive {
   display: none;
 }
@@ -121,66 +124,59 @@ ul.active {
   min-height: 80vh;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 
-  .hero_section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    margin-top: 50px;
-    padding-top: 10px;
-    flex: 1;
-    padding-bottom: 10px;
-
-    img {
-      max-width: 400px;
-    }
-  }
   .hero_description {
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    padding: 0;
+    margin-top: 200px;
+
     h1 {
+      font-family: "Poppins", sans-serif;
       font-weight: 400;
-      font-size: 1.8rem;
+      font-size: 18px;
+      margin: 0;
+      width: 100%;
       margin-top: 20px;
-      text-align: center;
+      text-align: left;
+      color: $contrast-blue;
+
       span {
-        color: $contrast-blue;
+        font-size: 25px;
+        font-weight: 500;
+        color: $light-blue;
       }
     }
     .title {
       h1,
       h2 {
-        padding-top: 10px;
-        text-align: center;
+        font-family: "Poppins", sans-serif;
+        text-align: left;
         font-weight: 500;
         //  text-align: center;
-        font-size: 1.7rem;
+        font-size: 25px;
       }
       h2 {
-        font-weight: 400;
+        font-weight: 300;
         opacity: 0.8;
-        font-size: 1.3rem;
+        font-size: 18px;
+        padding-top: 10px;
       }
       .hero_options {
         display: flex;
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
+        padding-top: 30px;
         button,
         .call_btn {
           width: fit-content;
           font-size: 1rem;
           margin-bottom: 30px;
-          background-color: $light-blue;
-          color: white;
-          border: none;
-          font-family: "Varela Round", sans-serif;
-          padding: 1em;
+          background-color: transparent;
+          color: $light-blue;
+          border: 1px solid $light-blue;
+          font-family: "Poppins", sans-serif;
+          padding: 10px;
           font-weight: 400;
           letter-spacing: 1px;
           border-radius: 5px;
@@ -189,6 +185,7 @@ ul.active {
         }
         button:hover {
           opacity: 1;
+          box-shadow: 5px 5px lightblue;
           transform: translateY(-4px);
           transition-duration: 0.5s;
         }
@@ -241,18 +238,18 @@ ul.active {
 .about_section,
 .services_section,
 .contact_section {
-  padding-left: 5%;
-  padding-right: 5%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 30px;
+
   h1 {
+    font-family: "Poppins", sans-serif;
     padding: 30px;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 25px;
     width: 100%;
     text-align: center;
   }
@@ -260,12 +257,10 @@ ul.active {
   .project {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin: 20px 10px;
+    margin: 10px;
     overflow: hidden;
     max-width: 400px;
-    min-height: 250px;
+    height: 190px;
     background-image: linear-gradient(#f3f7fa, white);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -275,41 +270,42 @@ ul.active {
     transition: 0.1s ease-in;
     opacity: 0;
     font-family: "Poppins", sans-serif;
-    padding: 20px;
+    padding: 10px;
     //border-right: 4px solid rgb(202, 82, 82);
-    font-family: "Poppins", sans-serif;
     background-image: linear-gradient(#f0f0f0, $light-blue);
     display: flex;
     flex-direction: column;
-    align-items: center;
-
     h1 {
-      font-size: 1.2rem;
-      padding: 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      padding: 0;
+      text-align: left;
       font-weight: 500;
       padding-bottom: 0;
       color: $light-blue;
       margin-bottom: 10px;
+      opacity: 0.8;
     }
     h2 {
-      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
       font-weight: 400;
       width: 100%;
-      text-align: center;
+      text-align: left;
       margin-bottom: 10px;
       span {
         color: $contrast-blue;
       }
     }
     button {
-      font-size: 1rem;
+      font-size: 15px;
       width: fit-content;
-      background-color: #20233d;
+      background-color: $contrast-blue;
       opacity: 0.8;
-      margin-top: 10px;
+      margin-top: 5px;
       border: none;
       font-family: "Varela Round", sans-serif;
-      padding: 10px;
+      padding: 5px 10px;
       font-weight: 400;
       letter-spacing: 1px;
       border-radius: 5px;
@@ -346,12 +342,13 @@ ul.active {
 }
 
 .about_section {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   h2 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
+    font-family: 'Poppins', sans-serif;
 
     span {
       color: $contrast-blue;
@@ -429,6 +426,7 @@ ul.active {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
       h1,
       h2 {
+        font-family: "Poppins", sans-serif;
         padding: 0;
         margin: 0;
       }
@@ -438,7 +436,7 @@ ul.active {
         font-weight: 500;
       }
       h2 {
-        font-size: 1rem;
+        font-size: 13px;
         font-weight: 300;
         margin-top: 5px;
       }
@@ -489,7 +487,6 @@ ul.active {
     margin: 80px auto;
     width: 320px;
     height: 250px;
-
     position: relative;
     perspective: 1000px;
 
@@ -513,19 +510,21 @@ ul.active {
         align-items: center;
         justify-content: center;
         h1 {
-          font-size: 1rem;
+          font-family: "Poppins", sans-serif;
+          font-size: .8rem;
           background-color: $light-blue;
           flex: 1;
           height: 100%;
           width: fit-content;
           color: white;
           text-align: center;
-          padding: 30px 0px;
+          padding: 30px 10px;
           text-align: center;
           padding-top: 55px;
-          border-radius: 0 0 40px;
+          border-radius: 0 0 20px;
         }
         h2 {
+          font-family: "Poppins", sans-serif;
           flex: 1;
           font-size: 0.8rem;
           font-weight: 400;
@@ -569,10 +568,12 @@ ul.active {
 .contact_section {
   padding-bottom: 50px;
   flex-direction: column;
+  
   h2,
   h4 {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
     text-align: justify;
     padding: 5%;
     span,
@@ -657,7 +658,7 @@ ul.active {
       padding-right: 30px;
       align-self: flex-start;
       margin-top: 30px;
-      .description_container{
+      .description_container {
         margin-right: 50px;
       }
       .tech_container,
