@@ -244,10 +244,10 @@ ul.active {
 .contact_section .project {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 20px;
   overflow: hidden;
   max-width: 400px;
-  height: 190px;
+  height: 195px;
   background-image: linear-gradient(#f3f7fa, white);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -260,7 +260,7 @@ ul.active {
   transition: 0.1s ease-in;
   opacity: 0;
   font-family: "Poppins", sans-serif;
-  padding: 10px;
+  padding: 10px 20px;
   background-image: linear-gradient(#f0f0f0, #20afff);
   display: flex;
   flex-direction: column;
@@ -314,6 +314,9 @@ ul.active {
   letter-spacing: 1px;
   border-radius: 5px;
   text-align: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 .project_section .overlay button a,
 .about_section .overlay button a,
@@ -495,6 +498,363 @@ ul.active {
   }
 }
 
+.project_section .star {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+}
+.project_section .meteor-1 {
+  position: absolute;
+  top: 79px;
+  left: 94%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 5.6s linear infinite;
+          animation: meteor 5.6s linear infinite;
+}
+.project_section .meteor-1:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-2 {
+  position: absolute;
+  top: 298px;
+  left: 20%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 5s linear infinite;
+          animation: meteor 5s linear infinite;
+}
+.project_section .meteor-2:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-3 {
+  position: absolute;
+  top: 276px;
+  left: 87%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 8s linear infinite;
+          animation: meteor 8s linear infinite;
+}
+.project_section .meteor-3:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-4 {
+  position: absolute;
+  top: 251px;
+  left: 43%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 6.1s linear infinite;
+          animation: meteor 6.1s linear infinite;
+}
+.project_section .meteor-4:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-5 {
+  position: absolute;
+  top: 58px;
+  left: 21%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 8.5s linear infinite;
+          animation: meteor 8.5s linear infinite;
+}
+.project_section .meteor-5:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-6 {
+  position: absolute;
+  top: 273px;
+  left: 95%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 6.7s linear infinite;
+          animation: meteor 6.7s linear infinite;
+}
+.project_section .meteor-6:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-7 {
+  position: absolute;
+  top: 78px;
+  left: 85%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 9s linear infinite;
+          animation: meteor 9s linear infinite;
+}
+.project_section .meteor-7:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-8 {
+  position: absolute;
+  top: 263px;
+  left: 70%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 5.3s linear infinite;
+          animation: meteor 5.3s linear infinite;
+}
+.project_section .meteor-8:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-9 {
+  position: absolute;
+  top: 141px;
+  left: 29%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 3.5s linear infinite;
+          animation: meteor 3.5s linear infinite;
+}
+.project_section .meteor-9:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-10 {
+  position: absolute;
+  top: 193px;
+  left: 84%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 4.2s linear infinite;
+          animation: meteor 4.2s linear infinite;
+}
+.project_section .meteor-10:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-11 {
+  position: absolute;
+  top: 200px;
+  left: 25%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 6.9s linear infinite;
+          animation: meteor 6.9s linear infinite;
+}
+.project_section .meteor-11:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-12 {
+  position: absolute;
+  top: 288px;
+  left: 33%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 4.9s linear infinite;
+          animation: meteor 4.9s linear infinite;
+}
+.project_section .meteor-12:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-13 {
+  position: absolute;
+  top: 212px;
+  left: 75%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 8.4s linear infinite;
+          animation: meteor 8.4s linear infinite;
+}
+.project_section .meteor-13:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-14 {
+  position: absolute;
+  top: 260px;
+  left: 65%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 6.1s linear infinite;
+          animation: meteor 6.1s linear infinite;
+}
+.project_section .meteor-14:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+.project_section .meteor-15 {
+  position: absolute;
+  top: 77px;
+  left: 64%;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #20afff, rgba(255, 255, 255, 0));
+  -webkit-animation: meteor 8.6s linear infinite;
+          animation: meteor 8.6s linear infinite;
+}
+.project_section .meteor-15:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(32, 175, 255, 0.7);
+  box-shadow: 0 0 15px 3px #20afff;
+}
+@-webkit-keyframes meteor {
+  0% {
+    opacity: 1;
+    margin-top: -300px;
+    margin-right: -300px;
+  }
+  12% {
+    opacity: 0;
+  }
+  15% {
+    margin-top: 300px;
+    margin-left: -600px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes meteor {
+  0% {
+    opacity: 1;
+    margin-top: -300px;
+    margin-right: -300px;
+  }
+  12% {
+    opacity: 0;
+  }
+  15% {
+    margin-top: 300px;
+    margin-left: -600px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .services_section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -640,6 +1000,10 @@ ul.inactive {
     padding-left: 20%;
     padding-right: 20%;
   }
+  .project_section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   .header {
     flex-direction: row;
   }
@@ -652,12 +1016,10 @@ ul.inactive {
     padding-top: 0;
     text-align: left;
     font-weight: 500;
-    font-size: 1.7rem;
   }
   .header .hero_description .title h2 {
     font-weight: 400;
     opacity: 0.8;
-    font-size: 1.3rem;
   }
   .header .hero_description .title .hero_options {
     display: flex;
