@@ -38,20 +38,28 @@ const images = [
     alt: "css",
   },
   {
-    url: "https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337902/avatar/icon_android_i3mqqk.png",
-    alt: "android",
-  },
-  {
-    url: "https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337903/avatar/java_gt9hju.png",
-    alt: "java",
-  },
-  {
     url: "https://res.cloudinary.com/dgtgmqx08/image/upload/v1664707867/avatar/typescript_rl1hkt.png",
     alt: "typescript",
   },
   {
     url: "https://res.cloudinary.com/dgtgmqx08/image/upload/v1664708021/avatar/javascript_dy7uan.png",
     alt: "javascript",
+  },
+  {
+    url: "https://res.cloudinary.com/dfhhkd04c/image/upload/v1670380675/tailwind-css-icon_coarru.png",
+    alt: "Tailwind",
+  },
+  {
+    url: "https://res.cloudinary.com/dfhhkd04c/image/upload/v1670381970/c-sharp-programming-language-icon_aecjpe.png",
+    alt: "C#",
+  },
+  {
+    url: "https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337902/avatar/icon_android_i3mqqk.png",
+    alt: "android",
+  },
+  {
+    url: "https://res.cloudinary.com/dgtgmqx08/image/upload/v1659337903/avatar/java_gt9hju.png",
+    alt: "java",
   },
 ];
 
@@ -69,7 +77,7 @@ const experience = [
   {
     title: "Graduation",
     desc: "Graduated at STI College Vigan, Computer Science",
-    year: "2022", 
+    year: "2022",
   },
   {
     title: "Started Freelancing",

@@ -227,6 +227,7 @@ ul.active {
       }
       button:hover {
         opacity: 1;
+        box-shadow: 5px 5px lightblue;
         transform: translateY(-4px);
         transition-duration: 0.5s;
       }
@@ -267,7 +268,7 @@ ul.active {
   }
   .overlay {
     position: absolute;
-    transition: 0.1s ease-in;
+    transition: 0.1s ease-in-out;
     opacity: 0;
     font-family: "Poppins", sans-serif;
     padding: 10px 20px;
@@ -306,7 +307,6 @@ ul.active {
       opacity: 0.8;
       margin-top: 5px;
       border: none;
-
       font-family: "Varela Round", sans-serif;
       padding: 5px 10px;
       font-weight: 400;
@@ -516,7 +516,11 @@ $shadow: ();
       width: 300px;
       height: 1px;
       transform: rotate(-45deg);
-      background-image: linear-gradient(to right, $light-blue, rgba(255, 255, 255, 0));
+      background-image: linear-gradient(
+        to right,
+        $light-blue,
+        rgba(255, 255, 255, 0)
+      );
       animation: meteor $d + s linear infinite;
       &:before {
         content: "";
@@ -642,7 +646,7 @@ $shadow: ();
   h2,
   h4 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: justify;
     padding: 5%;
