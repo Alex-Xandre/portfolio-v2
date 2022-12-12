@@ -260,8 +260,8 @@ ul.active {
     flex-direction: column;
     margin: 20px;
     overflow: hidden;
-    max-width: 400px;
-    height: 195px;
+    max-width: 350px;
+    height: 300px;
     background-image: linear-gradient(#f3f7fa, white);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -273,7 +273,7 @@ ul.active {
     font-family: "Poppins", sans-serif;
     padding: 10px 20px;
     //border-right: 4px solid rgb(202, 82, 82);
-    background-image: linear-gradient(#f0f0f0, $light-blue);
+    background-image: linear-gradient($light-blue, #cec9fe);
     display: flex;
     flex-direction: column;
     h1 {
@@ -283,7 +283,7 @@ ul.active {
       text-align: left;
       font-weight: 500;
       padding-bottom: 0;
-      color: $light-blue;
+      color:black;
       margin-bottom: 10px;
       opacity: 0.8;
     }
@@ -292,6 +292,7 @@ ul.active {
       font-size: 13px;
       font-weight: 400;
       width: 100%;
+      opacity: .8;
       text-align: left;
       margin-bottom: 10px;
       span {
@@ -315,7 +316,7 @@ ul.active {
       text-align: center;
       position: absolute;
       bottom: 20px;
-      right: 20px;
+      left: 20px;
 
       a {
         color: #f3f7fa;
