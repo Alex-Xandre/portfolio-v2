@@ -283,7 +283,7 @@ ul.active {
       text-align: left;
       font-weight: 500;
       padding-bottom: 0;
-      color:black;
+      color: black;
       margin-bottom: 10px;
       opacity: 0.8;
     }
@@ -292,7 +292,7 @@ ul.active {
       font-size: 13px;
       font-weight: 400;
       width: 100%;
-      opacity: .8;
+      opacity: 0.8;
       text-align: left;
       margin-bottom: 10px;
       span {
@@ -408,13 +408,14 @@ ul.active {
         align-items: center;
         text-decoration: none;
         color: $light-blue;
+        opacity: 0.8;
         svg {
           font-size: 30px;
           margin-right: 10px;
         }
       }
       a:hover {
-        color: $contrast-blue;
+        opacity: 1;
       }
     }
   }
@@ -507,9 +508,9 @@ $shadow: ();
   }
 
   @for $i from 1 through $n {
-    $v: random(90) + 9; // left
-    $h: random(250) + 50; // top
-    $d: random(70) / 10 + 3; // 秒數
+    $v: calc(random(90) + 9); // left
+    $h: calc(random(250) + 50); // top
+    $d: calc(random(70) / 10 + 3); // 秒數
     .meteor-#{$i} {
       position: absolute;
       top: $h + px;
@@ -521,7 +522,7 @@ $shadow: ();
         to right,
         $light-blue,
         rgba(255, 255, 255, 0)
-      );
+      ); 
       animation: meteor $d + s linear infinite;
       &:before {
         content: "";
