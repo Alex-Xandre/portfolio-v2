@@ -86,7 +86,7 @@ const Header = ({ theme }) => {
                 enable: true,
                 area: 800,
               },
-              value:50,
+              value: 50,
             },
             opacity: {
               value: 0.5,
@@ -111,6 +111,7 @@ const Header = ({ theme }) => {
           </span>
           You can call me Xandre
         </h1>
+
         <div className="title">
           <h1>
             {theme === "light" ? (

@@ -11,26 +11,19 @@ const Services = () => {
     Aos.refresh();
   }, []);
   return (
-    <section className="services_section"  id="service">
+    <section className="services_section" id="service" data-aos="fade-up">
       <h1>
         <span>&#60;</span> Services <span> &#47;&#62;</span>
       </h1>
 
-      <div className="services_wrapper">
-        <div className="services_container">
-          {Service.map((serc, index) => {
-            return (
-              <div
-                className={`services_item services_item_${index}`}
-                key={index}
-              >
-                <h1>{serc.title}</h1>
-                <h2> {serc.description}</h2>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      {Service.map((serc, index) => {
+        return (
+          <div className={`services_item services_item`} key={index}>
+            <h1>{serc.title}</h1>
+            <h2> {serc.description}</h2>
+          </div>
+        );
+      })}
     </section>
   );
 };
