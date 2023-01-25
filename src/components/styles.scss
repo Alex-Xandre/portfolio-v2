@@ -600,7 +600,7 @@ $shadow: ();
     }
   }
   .services_item:hover{
-    transform: scale(1);
+    transform: scale(1.1);
   }
 }
 
@@ -724,6 +724,8 @@ $shadow: ();
     .services_item {
       margin: 10px;
       height: 140px;
+      min-width: 350px;
+      max-width: 350px;
     }
   }
 }
