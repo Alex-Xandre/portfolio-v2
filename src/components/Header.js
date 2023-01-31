@@ -147,7 +147,7 @@ const Header = ({ theme }) => {
           </h2>
           <div className="hero_options">
             <a
-              href="https://www.linkedin.com/in/alexander-micua-04657a217/"
+              href="https://www.upwork.com/freelancers/~017a385ecea9ff4281"
               target="_blank"
               rel="noreferrer"
             >
