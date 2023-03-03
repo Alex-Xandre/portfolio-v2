@@ -11,7 +11,7 @@ const Services = () => {
     Aos.refresh();
   }, []);
   return (
-    <section className="services_section" id="service" data-aos="fade-up">
+    <section className="services_section" id="service">
       <h1>
         <span>&#60;</span> Services <span> &#47;&#62;</span>
       </h1>
